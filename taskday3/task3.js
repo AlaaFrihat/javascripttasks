@@ -25,37 +25,37 @@ for (let i = 0; i <= 15; i++) {
     }
 }
 ///>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+let input = prompt("enter your number")
 function insertDashes(numInput) {
-    let str = String(numInput);
-        let result = "";
-    for (let i = 0; i < str.length; i++) {
-        let currentNum = Number(str[i]);
-        let nextNum = Number(str[i + 1]);
+let str = String(numInput);
+let result = "";
+for (let i = 0; i < str.length; i++) {
+let currentNum = Number(str[i]);
+let nextNum = Number(str[i + 1]);
 
-        result += str[i];
+result += str[i];
 
-        if (currentNum % 2 === 0 && nextNum % 2 === 0 && i < str.length - 1) {
-            result += "-"; 
-        }
-    }
-
-    return result;
+if (currentNum % 2 === 0 && nextNum % 2 === 0 && i < str.length - 1) {
+result += "-"; 
 }
-let input = "025468"; 
-let output = insertDashes(input);
+}
+return result;
+}
 
+let output = insertDashes(input);
 console.log(output);
 document.write("<br>Result: " + output);
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Agechecker(20); 
 Agechecker(15); 
 
 function Agechecker(age) {
     if (age >= 18) {
-        console.log("The user is Adult");
-        document.write("<br>The user is Adult");
+    console.log("The user is Adult");
+    document.write("<br>The user is Adult");
     } else {
-        console.log("The user is Minor");
-        document.write("<br>The user is Minor");
+    console.log("The user is Minor");
+    document.write("<br>The user is Minor");
     }
 }

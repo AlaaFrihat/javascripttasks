@@ -1,10 +1,13 @@
-let Burger = { name: "Burger", price: 2.5, category: "Main", available: true };
-let Shawarma = { name: "Shawarma", price: 3.5, category: "Main", available: true };
-let Zinger = { name: "Zinger", price: 4.5, category: "Main", available: true };
-let Botato = { name: "Botato", price: 5.5, category: "Main", available: true };
-let Brosted = { name: "Brosted", price: 6.5, category: "Main", available: false };
 
-const food = [Burger, Shawarma, Zinger, Botato, Brosted];
+
+let food =[
+{ name: "Burger", price: 2.5, category: "Main", available: true },
+{ name: "Shawarma", price: 3.5, category: "Main", available: true },
+{ name: "Zinger", price: 4.5, category: "Main", available: true },
+{ name: "Botato", price: 5.5, category: "Main", available: true },
+{ name: "Brosted", price: 6.5, category: "Main", available: false},
+]
+
 
 
 function printFoodDetails(foodObj) {
@@ -44,15 +47,14 @@ let selectedFood = null;
     return selectedFood;
 }
 
-function startProgram() {
+function final() {
 let finalOrder = getCustomerOrder();
 
-if (finalOrder !== null) {
+if (finalOrder != null) {
 document.write("<h2>Order Successful!</h2>");
 printFoodDetails(finalOrder);
 } else {
 document.write("<h2>No order was made.</h2>");
 }
 }
-
-startProgram();
+final();
