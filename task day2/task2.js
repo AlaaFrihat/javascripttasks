@@ -10,7 +10,7 @@ let food =[
 
 
 
-function printFoodDetails(foodObj) {
+/*function printFoodDetails(foodObj) {
     document.write("<h3>Selected Food Details:</h3>");
     for (let key in foodObj) {
     document.write(key + ": " + foodObj[key] + "<br>");
@@ -18,9 +18,9 @@ function printFoodDetails(foodObj) {
 }
 
 function getCustomerOrder() {
-let selectedFood = null;
+let selectedFood = false;
 
-    while (selectedFood === null) {
+    while (selectedFood === false) {
     let userInput = prompt("What do you need?");
 
     if (userInput === null) {

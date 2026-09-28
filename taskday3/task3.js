@@ -47,10 +47,9 @@ console.log(output);
 document.write("<br>Result: " + output);
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Agechecker(20); 
-Agechecker(15); 
+let age = prompt("entr your age!") 
 
-function Agechecker(age) {
+function Agechecker() {
     if (age >= 18) {
     console.log("The user is Adult");
     document.write("<br>The user is Adult");
@@ -59,3 +58,4 @@ function Agechecker(age) {
     document.write("<br>The user is Minor");
     }
 }
+Agechecker();

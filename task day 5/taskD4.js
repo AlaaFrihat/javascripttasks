@@ -29,3 +29,16 @@ btn.onclick = function () {
     alert("Enter valid inputs");
   }
 };
+function deleteTask(element){
+    let items = document.getElementsByTagName("p");
+
+    for(let i = 0; i < items.length; i++){
+        if(items[i] == element.parentElement){
+            arr.splice(i,1);
+            localStorage.setItem("task", JSON.stringify(arr));
+            break;
+        }
+    }
+
+    element.parentElement.remove();
+}

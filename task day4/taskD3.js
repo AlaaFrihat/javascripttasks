@@ -57,7 +57,7 @@ btnSubmit.onmouseover = function(){
     btnSubmit.style.color="yellow";
 }
 btnSubmit.onclick = function () {
-        document.write("Hello " +name + "Your order is");
+        document.write("Hello " +name + " Your order is ");
     printFoodDetails(finalOrder);
 };
 

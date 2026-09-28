@@ -1,0 +1,7 @@
+[
+{ "name": "Burger", "price": 2.5, "category": "Main", "available": true },
+{ "name": "Shawarma","price": 3.5, "category": "Main", "available": true },
+{ "name": "Zinger", "price": 4.5, "category": "Main", "available": true },
+{ "name": "Botato", "price": 5.5, "category": "Main", "available": true },
+{ "name": "Brosted", "price": 6.5,"category": "Main", "available": false}
+]
